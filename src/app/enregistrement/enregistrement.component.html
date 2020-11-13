@@ -1,0 +1,41 @@
+<div class="card" style="height:660px;">
+    <h5 class="card-header bg-warning text-center">Enregistrement</h5>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput"><b>Adresse Email</b></label>
+              <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Example@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2"><b>Mot de passe</b></label>
+              <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2"><b>Mot de passe (saisir à nouveau)</b></label>
+                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2"><b>Identifiant TSK</b></label>
+                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="124563897">
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2"><b>Organisme affilié</b></label>
+                <select class="form-control">
+                    <option>001-ADASHI SABOGARI</option>
+                    <option>010-HAUSSA BRIQUE</option>
+                    <option>011-NEWBELL DOUALA</option>
+                  </select>
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2"><b>Identifiant au sein de l'organisme</b></label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="DRB-294523">
+            </div>
+          </form>
+      <a href="#" class="btn btn-success">connexion</a>    
+      <br><br>
+     <a [routerLink]="['/connexion']" routerLinkActive="active bg-warning"> <p class="text-primary">Deja enregistré?<span> Connextez-vous ici!</span></p></a>
+    </div>
+  </div>
+

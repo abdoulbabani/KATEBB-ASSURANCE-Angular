@@ -1,0 +1,63 @@
+div
+{
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.margin
+{
+    margin-left:4px;
+    padding-left:4px;
+}
+.align
+{
+ text-align:right;
+}
+.margincard
+{
+ margin-right:9px;
+}
+.image
+{
+  width:165px; 
+  height:190px; 
+}
+
+@media (max-width:980px) 
+{
+ 
+    .margincard
+    {
+     margin-right:0px;
+     margin-bottom:5px;
+    }
+    .image
+    {
+      
+      height:190px; 
+    }
+
+
+}
+ @media(max-width:576px) 
+{
+    img
+    {
+        margin-left:25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

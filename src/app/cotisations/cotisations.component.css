@@ -1,0 +1,375 @@
+
+.margin
+{
+ margin-right:10px;
+}
+
+
+
+.align
+{
+ text-align:right;
+}
+th,td
+{
+  text-align:center;  
+}
+.totaux
+{
+ width:120px;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width:768px) and (max-width: 881px)
+{
+div
+{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+}
+
+#sailorTableArea{
+    max-height:300px;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+#sailorTable{
+    white-space:normal;
+}
+tbody {
+    display:table-row;
+    height:200px;
+    overflow:auto;
+}
+thead, tbody tr{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:994px) and (max-width:1173px)
+{
+div
+{
+    font-size:11px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+th,td
+{
+ width:60px;
+}
+
+
+
+}
+
+
+@media all and (min-width:575.98px) and (max-width:827px)
+{
+
+    div
+    {
+        font-size:11px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    th,td
+    {
+     width:60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:575.98px) 
+{
+
+div
+{
+    font-size:9px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.margin
+{
+ margin-right:0px;
+}
+
+.ajuster
+{
+ padding:30px;
+ border:1px solid rgb(195, 202, 202);
+ margin-bottom:10px;
+}
+th,td
+{
+ width:50px;
+}
+
+
+}
+
+
+
+
+

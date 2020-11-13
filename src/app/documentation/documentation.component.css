@@ -1,0 +1,127 @@
+
+.margin
+{
+ margin-right:10px;
+}
+
+
+
+.align
+{
+ text-align:right;
+}
+.borde
+{
+   border:1px solid rgb(195, 202, 202); 
+   border-radius:10px;
+}
+button:hover
+{
+    background-color:rgb(195, 202, 202);
+}
+tr
+{
+    text-align:center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:768px) and (max-width: 881px)
+{
+div,.borde
+{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+}
+
+
+
+
+
+
+@media all and (min-width:994px) and (max-width:1173px)
+{
+div,.borde
+{
+    font-size:11px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) 
+{
+
+div,.borde
+{
+    font-size:9px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.margin
+{
+ margin-right:0px;
+}
+.ajuster
+{
+ padding:30px;
+ border:1px solid rgb(195, 202, 202);
+ margin-bottom:10px;
+}
+
+}

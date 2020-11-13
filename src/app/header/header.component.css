@@ -1,0 +1,9 @@
+li:hover
+{
+   background-color:rgba(235, 233, 229, 0.993);
+}
+a,li
+{
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
