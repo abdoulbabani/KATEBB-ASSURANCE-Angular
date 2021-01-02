@@ -1,0 +1,18 @@
+.card,input
+{
+    border:1px solid #bbb0b0;
+}
+.decoration:hover{
+    text-decoration:underline white;
+}
+.card
+{   
+    margin-left:2px;
+    margin-right:2px;
+    margin-bottom:20px;
+    height:600px;
+   /* padding-bottom:100px;
+   
+    margin-bottom:60px;*/
+   
+}

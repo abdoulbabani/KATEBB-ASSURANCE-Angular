@@ -1,0 +1,12 @@
+.card,input,select
+{
+    border:1px solid #bbb0b0;
+}
+.card
+{
+    margin-bottom:20px;
+}
+
+.decoration:hover{
+    text-decoration:underline white;
+}

@@ -44,7 +44,7 @@
                  <b>Identifiant TSK</b> :
                 </div>
                 <div class="col-7">
-                 12345632541
+                 {{tsk}}
                 </div>
            </div>
         </div>
@@ -92,7 +92,7 @@
                <b> Email :</b>
               </div>
               <div class="col-7">
-               garba.baba@gmail.com
+                 {{mail}}
               </div>
          </div>
       </div>
@@ -147,19 +147,33 @@
 
         <div class="row"><!--debut row2-->
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                 <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="card-img" alt="..." class="rounded-sm rounded-sm p-1 image">
+                 <img src="{{urlphoto}}" class="card-img" alt="..." class="rounded-sm rounded-sm p-1 image">
                </div>
                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
                  <div class="card-body">
                    <h5 class="card-title ml-1"style="font-size:14px;"><b>Selectionner un nouvel avatar</b></h5>
+                  <form (ngSubmit)="onsubmit1()">
                    <div class="form-group">
-                   <input type="browser" id="browser" class="form-control w-75 ml-2">
+                   
+                   <input type="file" (change)="onFileSelected($event)" class="form-control form-control-sm" id="customFile"accept="image/*"/>
+                   
                    </div>
+                   <p class="fileReceved">{{fileReceived}}</p>
                    <p class="card-text ml-2">
-                     <button type="button" class="btn btn-success btn-sm mr-2">Mise a jour </button>
-                     <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                     <button  type="submit"
+                      class="btn btn-success btn-sm mr-2"
+                      [disabled]="!fileReceived">Mise a jour</button>
+                     <button
+                     type="button" 
+                     class="btn btn-danger btn-sm"
+                     style="cursor:pointer"
+                     
+                    (click)="ondelete()"
+                    [disabled]="fileReceived">Supprimer</button>
                    </p>
+                  </form>
                  </div>
+                   
                </div>
       
        </div> <!--endrow2-->
@@ -199,27 +213,51 @@
 
 
 
-        <form>
+        <form [formGroup]="updatePassword" (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="formGroupExampleInput"><b>Adresse Email</b></label>
-              <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Example@gmail.com">
+              <input type="email" 
+              class="form-control" 
+              id="formGroupExampleInput" 
+              placeholder="Example@gmail.com"
+              formControlName="email">
+              <p style="color: red;">{{errorEmail}}</p>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"><b>Mot de passe actuel</b></label>
-              <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              <input type="password" 
+                     class="form-control" 
+                     id="formGroupExampleInput2" 
+                     placeholder="Another input placeholder"
+                     formControlName="password1">
+                     <p style="color: red;">{{passwor}}</p>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2"><b>Nouveau mot de passe</b></label>
-                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <input type="password" 
+                       class="form-control" 
+                       id="formGroupExampleInput2" 
+                       placeholder="Another input placeholder"
+                       formControlName="password2">
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput2"><b> Retaper le nouveau mot de passe</b></label>
-                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <input type="password" 
+                       class="form-control" 
+                       id="formGroupExampleInput2" 
+                       placeholder="Another input placeholder"
+                       formControlName="password3">
+                       <p style="color: red;">{{newpa}}</p>
+                       <p style="color:#008000;
+                       font-size:20px;">{{update}}</p>
               </div>
+              <button type="submit" 
+              class="btn btn-success"
+              [disabled]="updatePassword.invalid">connexion</button>
           </form> <!--end forme-->
         
-      <a href="#" class="btn btn-success">connexion</a>    <a [routerLink]="['/reinitialisation']"> <span class="text-primary"> Mot de passe oublié?</span></a>
-    
+      
+        
     </div><!-- fin card1-->
   </div><!--fin card1-->
 

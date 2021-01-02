@@ -14,11 +14,17 @@ import { ProfilComponent } from './profil/profil.component';
 import { CotisationsComponent } from './cotisations/cotisations.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { EstimationComponent } from './estimation/estimation.component';
+import {AuthGuardService} from './services/auth-guard.service';
+import {AuthserviceService} from './services/authservice.service';
+import {ProfileService} from './services/profile.service';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     HeaderComponent,
     ConnexionComponent,
     EnregistrementComponent,
@@ -33,10 +39,14 @@ import { EstimationComponent } from './estimation/estimation.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-   
+    HttpClientModule  
   ],
-  providers: [],
+  providers: [
+    
+    AuthserviceService,
+    AuthGuardService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

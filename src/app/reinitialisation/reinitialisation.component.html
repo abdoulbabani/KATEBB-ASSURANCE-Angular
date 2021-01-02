@@ -1,17 +1,29 @@
-<div class="card" style="height:550px;">
+<div class="card" style="height:600px;">
     <h5 class="card-header bg-warning text-center">Réinitialisation de mot de passe</h5>
     <div class="card-body">
-        <form>
+        <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="formGroupExampleInput"><b>Adresse Email</b></label>
-              <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Example@gmail.com">
+              <input type="email" 
+              class="form-control" 
+              id="formGroupExampleInput"
+              formControlName="email"
+               placeholder="Example@gmail.com">
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2"><b>Identifiant TSK</b></label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="124563897">
+                <input type="number"
+                 class="form-control" 
+                 id="formGroupExampleInput2"
+                 placeholder="124563897"
+                 formControlName="number">
             </div>
+            <p [ngStyle]="{color:getcolor()}">{{errorMessage}}</p>
+            <button type="submit" 
+            class="btn btn-success"
+            [disabled]="signinForm.invalid">Réinitialiser</button>
           </form>
-      <a href="#" class="btn btn-success">Réinitialiser</a> 
+      
     </div>
   </div>
 

@@ -1,6 +1,6 @@
-li:hover
+a:hover
 {
-   background-color:rgba(235, 233, 229, 0.993);
+    background-color:rgba(235, 233, 229, 0.993);
 }
 a,li
 {
